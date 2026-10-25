@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderly — Travel Discovery Website</title>
+  <meta name="description" content="Wanderly is a travel discovery website for finding beautiful destinations, slow travel experiences and trip inspiration. A frontend portfolio demo built with HTML and CSS only.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="home">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Wanderly home">
+        <svg class="logo-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M5 21c4-7 7-7 11-1s7 6 11-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="22" cy="10" r="2.5" fill="#c6e35c"/>
+        </svg>
+        <span class="logo-word">Wanderly</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu"><span></span></label>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-note">Slow travel, carefully chosen</p>
+          <h1>Find the places that make you <em>stay longer.</em></h1>
+          <p class="hero-text">Wanderly is a small, opinionated guide to destinations worth the journey: quiet coastlines, high valleys and cities best explored on foot. Every place is chosen for how it feels once the crowds have gone home.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#destinations">Explore destinations</a>
+            <a class="btn btn-ghost" href="#story">Read our story</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80" alt="Snow-capped mountain peaks rising above a calm valley at sunrise">
+          <figcaption>Alpine ridge at first light</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Wanderly in numbers (demo figures)">
+      <div class="container">
+        <dl class="stats-grid">
+          <div><dt>Destinations curated</dt><dd>120+</dd></div>
+          <div><dt>Local travel experts</dt><dd>48</dd></div>
+          <div><dt>Average customer rating</dt><dd>4.9 / 5</dd></div>
+        </dl>
+        <p class="demo-note">Figures shown are demonstration data for this portfolio project.</p>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="container">
+        <header class="section-head">
+          <h2>Featured destinations</h2>
+          <p>Six places our editors keep returning to. Prices are sample figures per person, for demonstration only.</p>
+        </header>
+        <div class="card-grid">
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Terraced rice fields and palm trees in Bali"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Bali, Indonesia</span><span class="tag">Culture</span></p>
+              <h3>Ubud rice terraces</h3>
+              <p class="dest-price">From <strong>$1,150</strong> · 7 nights</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Turquoise sea meeting a white sand beach"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Maldives</span><span class="tag">Beach</span></p>
+              <h3>Lagoon villa retreat</h3>
+              <p class="dest-price">From <strong>$2,400</strong> · 5 nights</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80" alt="Colourful alpine town beside a mountain lake"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Switzerland</span><span class="tag">Mountains</span></p>
+              <h3>Lakeside alpine villages</h3>
+              <p class="dest-price">From <strong>$1,890</strong> · 6 nights</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Parisian rooftops with the Eiffel Tower in the distance"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Paris, France</span><span class="tag">City</span></p>
+              <h3>Left Bank on foot</h3>
+              <p class="dest-price">From <strong>$1,320</strong> · 4 nights</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Traditional Japanese pagoda among autumn trees"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Kyoto, Japan</span><span class="tag">Culture</span></p>
+              <h3>Temples and tea houses</h3>
+              <p class="dest-price">From <strong>$1,760</strong> · 8 nights</p>
+            </div>
+          </article>
+          <article class="dest-card">
+            <div class="dest-media"><img loading="lazy" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Still mountain lake reflecting green hills"></div>
+            <div class="dest-body">
+              <p class="dest-meta"><span>Banff, Canada</span><span class="tag">Mountains</span></p>
+              <h3>Glacial lake country</h3>
+              <p class="dest-price">From <strong>$1,540</strong> · 6 nights</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="experiences">
+      <div class="container">
+        <header class="section-head">
+          <h2>Travel by temperament</h2>
+          <p>Whether you want salt air, thin air or street life, start with the kind of trip you need.</p>
+        </header>
+        <div class="category-grid">
+          <a class="category" href="#destinations">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80" alt="Palm-fringed beach with clear shallow water">
+            <div class="category-text"><h3>Beach escapes</h3><p>Quiet bays and slow mornings</p></div>
+          </a>
+          <a class="category" href="#destinations">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Mountain peaks under a starry night sky">
+            <div class="category-text"><h3>Mountain adventures</h3><p>Trails, huts and big skies</p></div>
+          </a>
+          <a class="category" href="#destinations">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Modern city skyline at dusk with glowing towers">
+            <div class="category-text"><h3>City breaks</h3><p>Food, design and long walks</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="container story-grid">
+        <figure class="story-figure">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80" alt="Winding road through a green valley toward distant mountains">
+        </figure>
+        <div class="story-copy">
+          <h2>The road is the destination</h2>
+          <p class="story-lead">We started Wanderly after a long drive that went nowhere on the itinerary and became the best day of the trip.</p>
+          <p>Too many guides rush you from landmark to landmark. We build journeys with room in them: a late breakfast in a village you did not plan to visit, a detour recommended by the person who runs the guesthouse.</p>
+          <p>Our experts live in the regions they write about. They tell us when to go, where to eat and which viewpoints are better at dusk than at dawn.</p>
+          <a class="text-link" href="#journal">Read the journal</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journal">
+      <div class="container">
+        <header class="section-head">
+          <h2>From the journal</h2>
+          <p>Field notes, packing lists and quiet corners from our contributors.</p>
+        </header>
+        <div class="journal-grid">
+          <article class="post">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" alt="Traveller with a backpack looking over a misty landscape">
+            <h3>How to pack for ten days in one bag</h3>
+            <p>A short list of what actually earns its place, and the things we stopped carrying.</p>
+            <p class="post-meta">Guide · 6 min read</p>
+          </article>
+          <article class="post">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80" alt="Small boat on a lake surrounded by forested hills">
+            <h3>Three lakes worth the early alarm</h3>
+            <p>Why the best light, and the best silence, arrive before breakfast.</p>
+            <p class="post-meta">Inspiration · 4 min read</p>
+          </article>
+          <article class="post">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="Ornate historic building with warm stone carvings">
+            <h3>Eating your way through an old city</h3>
+            <p>Our approach to finding good food without a single review site.</p>
+            <p class="post-meta">Food · 5 min read</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-inner">
+        <div>
+          <h2>One letter a month, no filler</h2>
+          <p>New destinations, seasonal tips and a single story worth reading.</p>
+        </div>
+        <div>
+          <div class="newsletter-form" role="group" aria-label="Newsletter signup demo">
+            <label for="email">Email address</label>
+            <div class="form-row">
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email">
+              <button type="button" class="btn btn-accent">Subscribe</button>
+            </div>
+          </div>
+          <p class="demo-note">Visual frontend demo only. This form does not send emails or store any data.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#home" aria-label="Wanderly home">
+          <svg class="logo-mark" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M5 21c4-7 7-7 11-1s7 6 11-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="22" cy="10" r="2.5" fill="#c6e35c"/>
+          </svg>
+          <span class="logo-word">Wanderly</span>
+        </a>
+        <p>Travel discovery for people who like to linger.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="footer-title">Explore</h2>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Social links">
+        <h2 class="footer-title">Follow</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.pinterest.com/" rel="noopener">Pinterest</a></li>
+          <li><a href="https://www.youtube.com/" rel="noopener">YouTube</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Wanderly. A portfolio demo project; all prices and statistics are sample data. Photography via Unsplash.</p>
+    </div>
+  </footer>
+</body>
+</html>
